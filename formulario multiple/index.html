@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario multiple</title>
+    <link rel="Icon" href="logo.png">
+    <link rel="stylesheet" href="./estilos/style.css">
+</head>
+
+<body>
+    <div class="root">
+        <form action="" class="form">
+            <div class="form-heder">
+                <ul class="barra">
+                    <li class="barra-option active">Datos del paciente</li>
+                    <li class="barra-option">Datos de los Familiares</li>
+                    <li class="barra-option">Condiciones Medicas</li>
+                    <li class="barra-option">hola</li>
+                </ul>
+                <h1 class="title">Registro de Pacientes</h1>
+            </div>
+            <div class="form-body">
+                <div class="step active" id="step-1">
+                    <div class="step-heder">
+                        <h2 class="step-title">Datos del paciente</h2>
+                    </div>
+                    <div class="step-body">
+                        <input type="text" placeholder="Nombre" class="step-input">
+                        <input type="text" placeholder="Apellidos" class="step-input">
+                        <input type="text" placeholder="Edad" class="step-input">
+                        <select name="sexo" class="step-input" value="defaul">
+                            <option value="defaul">--select--</option>
+                            <option value="M">M</option>
+                            <option value="F">F</option>
+                        </select>
+                    </div>
+                    <div class="step-footer">
+                        <button type="button" class="step-button step-button-next" data-to_step="2" data-step="1">Siguiente</button>
+                    </div>
+                </div>
+                <div class="step" id="step-2">
+                    <div class="step-heder">
+                        <h2>Datos de los Familiares</h2>
+                    </div>
+                    <div class="step-body">
+                        <input type="text" placeholder="Nombre" class="step-input">
+                        <input type="text" placeholder="Edad" class="step-input">
+                        <input type="text" placeholder="parentesco" class="step-input">
+                    </div>
+                    <div class="step-footer">
+                        <button type="button" class="step-button step-button-back" data-to_step="1" data-step="2">Atras</button>
+                        <button type="button" class="step-button step-button-next" data-to_step="3" data-step="2">Siguiente</button>
+                    </div>
+                </div>
+                <div class="step" id="step-3">
+                    <div class="step-heder">
+                        <h2>Condiciones Medicas</h2>
+                    </div>
+                    <div class="step-body">
+                        <input type="text" placeholder="Nombre" class="step-input">
+                        <input type="text" placeholder="Edad" class="step-input">
+                        <input type="text" placeholder="parentesco" class="step-input">
+                    </div>
+                    <div class="step-footer">
+                        <button type="button" class="step-button step-button-back" data-to_step="2" data-step="3">Atras</button>
+                        <button type="submit" class="step-button">Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="./javaScript/app.js"></script>
+</body>
+
+</html>

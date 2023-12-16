@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<menu>
+  <item>
+    <nombre>Inicio</nombre>
+    <enlace>index.html</enlace>
+  </item>
+  <item>
+    <nombre>XML</nombre>
+    <enlace>resumen.html</enlace>
+  </item>
+  <item>
+    <nombre>Programacion Web</nombre>
+    <enlace>web.html</enlace>
+  </item>
+</menu>

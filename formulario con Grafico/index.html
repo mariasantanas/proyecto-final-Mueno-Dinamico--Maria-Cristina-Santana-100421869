@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grafico</title>
+    <link rel="stylesheet" href="estilo/style.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+
+</head>
+
+<body>
+    <div class="root">
+        <form action="" class="form" id="form">
+            <div class="conten">
+                <div class="head">
+                    <h1>MIS ACTIVIDADES DEL DIA</h1>
+                </div>
+                <div class="input-boddy">
+                    <input type="number" placeholder="Trabajo" class="input" id="gastos">
+                    <input type="number" placeholder="Almuerzo" class="input" id="gasto2">
+                    <input type="number" placeholder="Recreación" class="input" id="gasto3">
+                    <input type="number" placeholder="Ejercicio" class="input" id="gasto4">
+                    <input type="number" placeholder="Dormir" class="input" id="gasto5">
+                </div>
+                <div class="footer">
+                    <button type="submit" class="boton">Enviar</button>
+                    <button type="button" class="boton" onclick="location.reload();">Borrar</button>
+                    <small id="alert"></small>
+                </div>
+            </div>
+
+        </form>
+        <div id="chart_div" class="grafico"></div>
+    </div>
+    <script src="./script/app.js"></script>
+</body>
+
+</html>

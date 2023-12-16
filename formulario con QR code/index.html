@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genedador de codigo QR</title>
+    <script src="./javaScript/jquery.min.js"></script>
+    <script src="./javaScript/vCard.js"></script>
+    <link rel="Icon" href="qrlogo.png">
+    <link rel="stylesheet" href="./estilos/style.css">
+</head>
+
+<body>
+    <div class="root">
+        <form action="" method="POST" class="form">
+            <div class="form-header">
+                <h1 class="title">Genedador de codigo QR</h1>
+            </div>
+            <div class="form-body">
+                <div class="step" id="step-1">
+                    <div class="step-heder">
+                        <h2 class="step-title">Contacto a Registrar</h2>
+                    </div>
+                    <div class="step-body">
+                        <input type="text" placeholder="Nombre" name="nombre" class="step-input">
+                        <input type="text" placeholder="Apellidos" name="apellido" class="step-input">
+                        <input type="text" placeholder="Edad" name="edad" class="step-input">
+                        <select name="sexo" class="step-input" value="defaul" name="genero">
+                            <option value="defaul">--select--</option>
+                            <option value="M">M</option>
+                            <option value="F">F</option>
+                        </select>
+                        <input type="tel" placeholder="xxx-xxx-xxxx" name="telefono" class="step-input">
+                        <input type="email" placeholder="example@example.com" name="email" class="step-input">
+                        <input type="text" name="direccion" placeholder="Direccion" class="step-input">
+                    </div>
+                    <div class="step-footer">
+                        <input type="button" name="submit" value="Generar" style="margin-left: 10px;" class="step-button">
+                        <input type="reset" name="limpiar" value="Limpiar" onclick="hideImage()" class="step-button">
+                    </div>
+
+                </div>
+        </form>
+
+        </div>
+
+        <img id="qr" src="http://chart.googleapis.com/chart?cht=qr&chs=200x200&chl=" alt="vcard qr" style="display: none;">
+        <script src="./javaScript/vCard.js"></script>
+</body>
+
+</html>
